@@ -1,3 +1,7 @@
+School Diary project. Currently under construction.
+
+This project only includes the front-end of the application. For front-end check SchoolDiary repo.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
