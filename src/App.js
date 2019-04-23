@@ -13,6 +13,7 @@ class App extends Component {
         <div className="App">
           <div className="container">
             <Route exact path="/" render={props => (
+              /* React Fragments: More components can be added here for the home page of the application. */
               <React.Fragment>
                 <Home></Home>
             </React.Fragment>

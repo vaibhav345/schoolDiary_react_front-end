@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Switch, Route } from "react-router-dom";
 
+{/* One way to create the dynamic tabs. The url will change to /teacher for teacher tab. */}
 const Student = () => <div>
                     <form action="studentProfile.html">
                     <hr></hr>
@@ -11,7 +12,10 @@ const Student = () => <div>
                       <Link to='/'><button className="btn submit-btn">Submit</button></Link>
                     </form>
                     <hr></hr>
+
+                    {/*TODO: Create the landing page for Forgot password. */}
                     <Link to="/" className="pull-left">Forget You Password?</Link>
+                    {/*TODO: Need to direct this to student-register instead of global register in UI. */}
                     <Link to="/register" className="float-right">Click Here to Register</Link>
                 </div>;
 const Teacher = () => <div>
@@ -23,7 +27,10 @@ const Teacher = () => <div>
                       <Link to='/'><button className="btn submit-btn">Submit</button></Link>
                     </form>
                     <hr></hr>
+
+                    {/*TODO: Create the landing page for Forgot password. */}
                     <Link to="/" className="pull-right">Forget You Password?</Link>
+                    {/*TODO: Need to direct this to teacher-register instead of global register in UI. */}
                     <Link to="/register" className="float-right">Click Here to Register</Link>
                 </div>;
 
