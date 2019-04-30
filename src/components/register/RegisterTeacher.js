@@ -29,7 +29,7 @@ export class Register extends Component {
     this.setState(this.state.fields);
     const { name, email, user_name, password } = this.state.fields;
 
-    axios.post('/students/register', { name, email, user_name, password })
+    axios.post('/teachers/register', { name, email, user_name, password })
           .then((result) => {
             console.log("Results: " + result.status);
           });
