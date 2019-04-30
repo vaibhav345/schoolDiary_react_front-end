@@ -15,8 +15,7 @@ const Student = () => <div>
 
                     {/*TODO: Create the landing page for Forgot password. */}
                     <Link to="/" className="pull-left">Forget You Password?</Link>
-                    {/*TODO: Need to direct this to student-register instead of global register in UI. */}
-                    <Link to="/register" className="float-right">Click Here to Register</Link>
+                    <Link to="/registerStudent" className="float-right">Click Here to Register</Link>
                 </div>;
 const Teacher = () => <div>
                     <form action="studentProfile.html">
@@ -30,8 +29,7 @@ const Teacher = () => <div>
 
                     {/*TODO: Create the landing page for Forgot password. */}
                     <Link to="/" className="pull-right">Forget You Password?</Link>
-                    {/*TODO: Need to direct this to teacher-register instead of global register in UI. */}
-                    <Link to="/register" className="float-right">Click Here to Register</Link>
+                    <Link to="/registerTeacher" className="float-right">Click Here to Register</Link>
                 </div>;
 
 export class Login extends Component {

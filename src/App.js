@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/home/Home'
 import Login from './components/login/Login'
-import Register from './components/register/Register'
+import RegisterStudent from './components/register/RegisterStudent'
+import RegisterTeacher from './components/register/RegisterTeacher'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -19,7 +20,8 @@ class App extends Component {
             </React.Fragment>
             )} />
             <Route path="/login" component={Login}/>
-            <Route path="/register" component={Register}/>
+            <Route path="/registerStudent" component={RegisterStudent}/>
+            <Route path="/registerTeacher" component={RegisterTeacher}/>
           </div>
         </div>
       </Router>  

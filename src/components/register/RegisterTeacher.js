@@ -39,7 +39,7 @@ export class Register extends Component {
     return (
       <div>
         <div className="school-select">
-          <h2 className="page-header">Register</h2>
+          <h2 className="page-header">Register Teacher</h2>
           <form onSubmit={this.submituserRegistrationForm}>
             <div className="form-group">
                 <lable>Name</lable>
