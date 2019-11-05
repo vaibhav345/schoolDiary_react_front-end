@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { error } from 'util';
+//import { error } from 'util';
 
 export class RegisterStudent extends Component {
     constructor() {
         super();
         this.state = {
           fields: {},
-          error
           //errors: {} Need to implement it later (Validations)
         }
     
@@ -19,10 +18,8 @@ export class RegisterStudent extends Component {
         let fields = this.state.fields;
         fields[e.target.name] = e.target.value;
 
-        let error = this.state.error;
         this.setState({
           fields,
-          error
         });
       }
     
