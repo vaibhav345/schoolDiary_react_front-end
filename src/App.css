@@ -46,3 +46,7 @@ body{
 .school-select a{
   color: #fff;
 }
+.errorMsg {
+  color: #cc0000;
+  margin-bottom: 12px;
+}
