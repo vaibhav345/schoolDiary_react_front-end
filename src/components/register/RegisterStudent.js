@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { error } from 'util';
 
 export class RegisterStudent extends Component {
     constructor() {
         super();
         this.state = {
           fields: {},
+          error
           //errors: {} Need to implement it later (Validations)
         }
     
@@ -16,10 +18,12 @@ export class RegisterStudent extends Component {
       onChange(e) {
         let fields = this.state.fields;
         fields[e.target.name] = e.target.value;
+
+        let error = this.state.error;
         this.setState({
-          fields
+          fields,
+          error
         });
-    
       }
     
       async submituserRegistrationForm(e) {
@@ -27,11 +31,14 @@ export class RegisterStudent extends Component {
     
         this.setState(this.state.fields);
         const { name, email, user_name, password } = this.state.fields;
-    
+        
+        // The variable name should match at the back-end.
         axios.post('/students/register', { name, email, user_name, password })
-              .then((result) => {
-                console.log("Results: " + result.status);
-              });
+              .then((response) => {
+                console.log("Results: " + response.data);
+              }).catch((error) => {
+                console.log(JSON.stringify(error.response.data));
+              })
         }
     
       render() {
